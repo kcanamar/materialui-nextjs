@@ -26,16 +26,7 @@ export default function MyApp(props) {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <NavBar style={{margin: "auto"}}/>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={3}>
-            <Grid item xs="auto">
-              <div>Bye Bye</div>
-            </Grid>
-            <Grid item xs={6}>
-              <Component {...pageProps} />
-            </Grid>
-          </Grid>
-        </Box>
+        <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
   );
