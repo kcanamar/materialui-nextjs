@@ -74,6 +74,7 @@ export default function SideList({open, setOpen}) {
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem key={text} disablePadding sx={{ display: 'block' }}>
                         <ListItemButton
+                            href="/" 
                             sx={{
                             minHeight: 48,
                             justifyContent: open ? 'initial' : 'center',
